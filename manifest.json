@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Crunchyroll Auto Skip",
+    "version": "1.0.2",
+    "description": "Automatically clicks Skip Intro/Recap/Credits on Crunchyroll.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.crunchyroll.com/watch/*",
+                "https://*.crunchyroll.com/*",
+                "https://*.vrv.co/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": true,
+            "match_about_blank": true
+        }
+    ],
+    "action": {
+        "default_title": "Crunchyroll Auto Skip",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}

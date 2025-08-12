@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Crunchyroll Auto Skip</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        body {
+            font: 14px system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            margin: 12px;
+            min-width: 270px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 6px 0;
+        }
+
+        .group {
+            margin-top: 8px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .muted {
+            color: #666;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5e5;
+            margin: 8px 0;
+        }
+
+        .disabled {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <input id="toggleMaster" type="checkbox" />
+        <label for="toggleMaster"><strong>Enable auto-skip</strong></label>
+    </div>
+
+    <div class="divider"></div>
+
+    <div id="featureGroup" class="group">
+        <div class="row">
+            <input id="toggleIntro" type="checkbox" />
+            <label for="toggleIntro">Skip Intro</label>
+        </div>
+        <div class="row">
+            <input id="toggleRecap" type="checkbox" />
+            <label for="toggleRecap">Skip Recap</label>
+        </div>
+        <div class="row">
+            <input id="toggleCredits" type="checkbox" />
+            <label for="toggleCredits">Skip Credits/Ending/Outro</label>
+        </div>
+    </div>
+
+    <p id="status" class="muted"></p>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
