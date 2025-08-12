@@ -19,10 +19,12 @@
 ## 📷 Screenshots
 
 **Popup UI**
-![Popup](docs/popup.png)
 
-**Example on Crunchyroll**
-![Skip Button Clicked](docs/example.png)
+![Popup](screenshots/popup.png)
+
+<!-- **Example on Crunchyroll**
+
+![Skip Button Clicked](docs/example.png) -->
 
 ---
 
